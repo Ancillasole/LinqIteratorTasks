@@ -77,7 +77,7 @@ namespace ConsoleApplication2
                 {
                     if (i != j)
                     {
-                        if (!temp.Contains(Int32.Parse($"{arr[i]}{arr[j]}")))
+                        if (!temp.Contains(Int32.Parse($"{arr[i]}{arr[j]}")) && !temp.Contains(Int32.Parse($"{arr[j]}{arr[]}")))
                         {
                             temp.Add((Int32.Parse($"{arr[i]}{arr[j]}")));
                             yield return Int32.Parse($"{arr[i]}{arr[j]}");
